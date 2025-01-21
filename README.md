@@ -4,7 +4,8 @@ A collection of solutions to various historic mathematical and computational pro
 ## Problems List
 
 ### Mathematical
-- [The Josephus Permutation]()
+- The Josephus Permutation
+  - [python](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/Python/The%20Josephus%20Permutation.py)
 
 ### Computer Science
 - [None yet :C]()
