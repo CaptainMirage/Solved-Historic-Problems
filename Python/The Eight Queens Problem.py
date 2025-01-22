@@ -1,12 +1,12 @@
 """
-The Eight Queens Problem
-------------------------
 Problem Description:
+-------------------
     Place eight chess queens on an 8x8 chessboard so that no two queens 
     threaten each other. Thus, a solution requires that no two queens 
     share the same row, column, or diagonal.
 
 Historical Context:
+-------------------
     - First proposed by Max Bezzel in 1848
     - Franz Nauck published the first solutions in 1850
     - Gauss studied the problem and found 72 distinct solutions
@@ -14,6 +14,7 @@ Historical Context:
     - It's a classic example of a constraint satisfaction problem in computer science
 
 Implementation Strategy:
+
     - Uses backtracking algorithm
     - Time Complexity: O(n!)
     - Space Complexity: O(n^2)
