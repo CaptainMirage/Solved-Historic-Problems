@@ -14,7 +14,7 @@ Historical Context:
     - It's a classic example of a constraint satisfaction problem in computer science
 
 Implementation Strategy:
-
+-----------------------
     - Uses backtracking algorithm
     - Time Complexity: O(n!)
     - Space Complexity: O(n^2)
