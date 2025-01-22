@@ -92,7 +92,7 @@ def run_test_cases():
         {"array": list(range(1, 42)), "k": 3, "expected": None},  # Expected value omitted for brevity
         
         # Test case 5: Edge case - k equals array length
-        {"array": list(range(1, 6)), "k": 5, "expected": [5, 4, 3, 2, 1]}
+        {"array": list(range(1, 6)), "k": 5, "expected": [5, 1, 3, 4, 2]}
     ]
 
     for i, test in enumerate(test_cases, 1):
@@ -104,6 +104,9 @@ def run_test_cases():
         
         # Check against expected result if provided
         if test["expected"]:
+            print(f"\nTest {i} debug:")
+            print(f"Expected result: {test['expected']}")
+            print(f"Actual result:   {fast_result}")
             assert fast_result == test["expected"], f"Test {i}: Incorrect result"
         
         print(f"Test {i} passed: k={test['k']}, length={len(test['array'])}")
