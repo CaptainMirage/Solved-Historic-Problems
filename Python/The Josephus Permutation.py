@@ -75,7 +75,7 @@ def slow_solution(array: List[Union[int, str]], k: int) -> List[Union[int, str]]
 
 def run_test_cases():
     """
-    Comprehensive test cases for verifying the Josephus Permutation implementations.
+    test cases for verifying the Josephus Permutation implementations.
     Includes edge cases and historical examples.
     """
     test_cases = [
