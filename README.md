@@ -24,6 +24,13 @@ A collection of solutions to various historic mathematical and computational pro
 - The Traveling Salesman Problem
 - The Shortest Path Through a Maze
 
+### Probability & Game Theory
+- The Monte Carlo Method
+- The Secretary Problem
+- The Monty Hall Problem
+- The Birthday Paradox
+- The Prisoner's Dilemma
+
 
 
 ## Structure
