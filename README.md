@@ -37,6 +37,9 @@ A collection of solutions to various historic mathematical and computational pro
 - The Dining Philosophers Problem
 - The Dining Cryptographers Problem
 
+### Pattern Generation & Cellular Automata
+- The Gosper's Gun Problem
+- The Chaos Game
 
 ## Structure
 Each problem solution includes:
