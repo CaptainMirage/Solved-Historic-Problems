@@ -18,6 +18,12 @@ A collection of solutions to various historic mathematical and computational pro
 - The Pancake Sorting Problem
 - The Lights Out Puzzle
 
+### Graph Theory & Optimization
+- The Bridges of Königsberg
+- The Chinese Postman Problem
+- The Traveling Salesman Problem
+- The Shortest Path Through a Maze
+
 
 
 ## Structure
