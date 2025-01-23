@@ -38,7 +38,6 @@ A collection of solutions to various historic mathematical and computational pro
 - The Dining Cryptographers Problem
 
 
-
 ## Structure
 Each problem solution includes:
 - Problem description
