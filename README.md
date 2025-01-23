@@ -1,4 +1,4 @@
-# Historic Problems Solutions
+# Solved Historic Problems
 A collection of solutions to various historic mathematical and computational problems implemented in different programming languages.
 
 ## Problems List
