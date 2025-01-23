@@ -31,6 +31,12 @@ A collection of solutions to various historic mathematical and computational pro
 - The Birthday Paradox
 - The Prisoner's Dilemma
 
+### Distributed Systems & Computing
+- The Byzantine Generals Problem
+- The Two Generals' Problem
+- The Dining Philosophers Problem
+- The Dining Cryptographers Problem
+
 
 
 ## Structure
