@@ -5,14 +5,15 @@ A collection of solutions to various historic mathematical and computational pro
 
 ### Number Theory & Mathematics
 - The Josephus Permutation
-  - [python](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/Python/The%20Josephus%20Permutation.py)
+  - [rust](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/Rust/The%20Josephus%20Problem.rs)
 - The Chinese Remainder Theorem
 - Sieve of Eratosthenes
 - The Collatz Conjecture
 
 ### Algorithms & Puzzle Problems
 - The Eight Queens Problem
-  - [python](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/Python/The%20Eight%20Queens%20Problem.py)
+  - [C++](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/C%2B%2B/The%20Eight%20Queens%20Problem.cpp)
+  , [rust](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/Rust/The%20Eight%20Queens%20Problem.rs)
 - The Hanoi Tower Problem
 - The Knapsack Problem
 - The Pancake Sorting Problem
