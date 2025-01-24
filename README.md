@@ -22,7 +22,7 @@ A collection of solutions to various historic mathematical and computational pro
 ### Graph Theory & Optimization
 - The Bridges of Königsberg
   - [C++](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/C%2B%2B/The%20Bridges%20of%20K%C3%B6nigsberg.cpp) 
-    [Rust]()
+  , [Rust]()
 - The Chinese Postman Problem
 - The Traveling Salesman Problem
 - The Shortest Path Through a Maze
