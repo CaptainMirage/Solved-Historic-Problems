@@ -5,7 +5,7 @@ A collection of solutions to various historic mathematical and computational pro
 
 ### Number Theory & Mathematics
 - The Josephus Permutation
-  - [rust](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/Rust/The%20Josephus%20Problem.rs)
+  - [Rust](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/Rust/The%20Josephus%20Problem.rs)
 - The Chinese Remainder Theorem
 - Sieve of Eratosthenes
 - The Collatz Conjecture
