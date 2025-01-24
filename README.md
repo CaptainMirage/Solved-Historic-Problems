@@ -13,7 +13,7 @@ A collection of solutions to various historic mathematical and computational pro
 ### Algorithms & Puzzle Problems
 - The Eight Queens Problem
   - [C++](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/C%2B%2B/The%20Eight%20Queens%20Problem.cpp)
-  , [rust](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/Rust/The%20Eight%20Queens%20Problem.rs)
+  , [Rust](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/Rust/The%20Eight%20Queens%20Problem.rs)
 - The Hanoi Tower Problem
 - The Knapsack Problem
 - The Pancake Sorting Problem
