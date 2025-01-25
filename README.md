@@ -52,8 +52,8 @@ Each problem solution includes:
 - Test cases
 
 ## Languages Used
-- [python]()
-- [rust]()
+- []()
+- [Rust]()
 - [C++]()
 
 ## Contributing
