@@ -52,9 +52,9 @@ Each problem solution includes:
 - Test cases
 
 ## Languages Used
-- [Rust]()
-- [C]()
-- [C++]()
+- [Rust](https://doc.rust-lang.org/book/)
+- [C](https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170)
+- [C++](https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170)
 
 ## Contributing
 Feel free to add new solutions or improve existing ones!
