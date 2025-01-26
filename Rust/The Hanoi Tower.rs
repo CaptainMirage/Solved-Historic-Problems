@@ -18,7 +18,7 @@
  * 
  * Implementation Notes:
  * --------------------
- * again too lazy to add tests and stuff
+ * again too lazy to add tests and stuff, why do you need tests here anyway?
  */
 
 fn hanoi_tower(n: usize, source: char, auxiliary: char, destination: char) {
