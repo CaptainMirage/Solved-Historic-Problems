@@ -7,6 +7,7 @@
  * 2. Each disk is moved from one peg to another
  * 3. No larger disk can be placed on top of a smaller disk
  * The minimum number of moves required is 2^n - 1, where n is the number of disks.
+ * 
  * Historical Context:
  * ------------------
  * The problem was first introduced by French mathematician Édouard Lucas in 1883.
