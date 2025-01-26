@@ -48,7 +48,7 @@ fn main() {
     run_test(1, 3, 15, 5);
     run_test(2, 1, 5, 5);
     run_test(3, 3, 42, 34);
-    
+
     let n = 41; // number of ppl standing in the circle
     let k = 3; // k-th person is eliminated each round
     let survivor = josephus_recursive(n, k) + 1;  // Convert to 1-based index
