@@ -1,4 +1,5 @@
-/**
+// ReSharper disable All
+/*
  * Problem Description:
  * -------------------
  * The Hanoi Tower is a mathematical puzzle involving three pegs and a set of disks of different sizes.
@@ -7,7 +8,7 @@
  * 2. Each disk is moved from one peg to another
  * 3. No larger disk can be placed on top of a smaller disk
  * The minimum number of moves required is 2^n - 1, where n is the number of disks.
- * 
+ *
  * Historical Context:
  * ------------------
  * The problem was first introduced by French mathematician Édouard Lucas in 1883.
@@ -15,11 +16,9 @@
  * between three pegs, following the same rules. According to the legend, when the monks complete 
  * moving all 64 disks, the world will end. This mythical puzzle would require 2^64 - 1 moves, 
  * which would take approximately 585 billion years to complete.
- * 
- * Implementation Notes:
- * --------------------
- * i just translated the rust version, dont judge me im lazy currently
  */
+
+
 #include <iostream>
 using namespace std;
 
