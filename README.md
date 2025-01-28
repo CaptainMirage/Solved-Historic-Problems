@@ -52,7 +52,7 @@ Each problem solution includes:
 - Problem description
 - Historical context
 - Implementation
-- Test cases
+- Test cases (sometimes)
 
 ## Languages Used
 - [Rust](https://doc.rust-lang.org/book/)
