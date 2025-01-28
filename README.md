@@ -51,13 +51,13 @@ A collection of solutions to various historic mathematical and computational pro
 Each problem solution includes:
 - Problem description
 - Historical context
-- Implementation
-- Test cases
+- Dev note (old Implementation)
+- Test cases (sometimes)
 
 ## Languages Used
 - [Rust](https://doc.rust-lang.org/book/)
 - [C++](https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170)
-- [C](https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170)
+- [C](https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170) (yet to be done)
 
 ## Contributing
 Feel free to add new solutions or improve existing ones!
