@@ -51,7 +51,7 @@ A collection of solutions to various historic mathematical and computational pro
 Each problem solution includes:
 - Problem description
 - Historical context
-- Implementation
+- Dev note (old Implementation)
 - Test cases (sometimes)
 
 ## Languages Used
