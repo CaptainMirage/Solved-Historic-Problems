@@ -25,21 +25,27 @@ using namespace std;
 class solution {
     public:
     static void hanoi_tower(int n, char source, char auxiliary, char destination) {
+        // Base case: if only one disk, move directly
         if (n == 1) {
             std::cout << "Move disk 1 from {} to {}" << '\n';
             return;
         }
+        // 1. Move n-1 disks from source to auxiliary
         hanoi_tower(n - 1, source, destination, auxiliary);
+
+        // 2. Move the nth disk from source to destination
         std::cout << "Move disk 1 from {} to {}" << '\n';
+
+        // 3. Move n-1 disks from auxiliary to destination
         hanoi_tower(n - 1, auxiliary, source, destination);
     }
 };
 
-int main(int argc, char* argv[])
-{
+int main(int argc, char* argv[]) {
+    // set the disks amount
     int n = 12;
-    solution::hanoi_tower(n,
-                          'A',
-                          'B',
-                          'C');
+    solution::hanoi_tower(n, // amount of disks
+                          'A', // source peg
+                          'B', // axiliary peg
+                          'C'); // destination peg
 }
