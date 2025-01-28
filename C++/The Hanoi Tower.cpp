@@ -16,6 +16,10 @@
  * between three pegs, following the same rules. According to the legend, when the monks complete 
  * moving all 64 disks, the world will end. This mythical puzzle would require 2^64 - 1 moves, 
  * which would take approximately 585 billion years to complete.
+ * Implementation Notes:
+ * --------------------
+ * again too lazy to add tests and stuff, why do you need tests here anyway?
+ * this is smth that i feel like doesnt have a better way of doing or needs tests so yea
  */
 
 
