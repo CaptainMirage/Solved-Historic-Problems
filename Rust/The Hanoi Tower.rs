@@ -45,5 +45,5 @@ fn main() {
     hanoi_tower(disks, // amount of disks
                 'A', // source peg
                 'B', // auxiliary peg
-                'C'); // destination 
+                'C'); // destination peg
 }
