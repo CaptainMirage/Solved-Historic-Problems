@@ -81,9 +81,12 @@ public:
     
     // Print all solutions
     void printSolutions() const {
+        int idx = 0;
         for (const auto& solution : solutions) {
+            idx += 1;
+            printf("Solution #%d:\n", idx);
             printBoard(solution);
-            std::cout << "\n";
+            std::cout << '\n';
         }
     }
     
@@ -112,6 +115,8 @@ namespace {
     // Unit tests in anonymous namespace
     void runTests() {
         EightQueens queens;
+
+        std::cout << "Testing.." << '\n';
         
         // Test: Verify number of solutions
         assert(queens.getSolutionCount() == 92);
@@ -131,11 +136,12 @@ namespace {
 int main() {
     EightQueens queens;
     
-    // Print solution count
-    std::cout << "Total solutions: " << queens.getSolutionCount() << '\n';
-    
     // Print first few solutions
     queens.printSolutions();
+
+    // Print solution count
+    std::cout << "Total solutions: " << queens.getSolutionCount() << '\n';
+    std::cout << "Total actual solutions: 92 (should match the total solutions)" << '\n';
     
     // Run tests
     runTests();
