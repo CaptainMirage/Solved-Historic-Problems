@@ -15,8 +15,8 @@ Siege of Yodfat. They chose suicide over capture and decided to form a circle an
 third person until no one was left. Josephus, not wanting to die, quickly calculated where he
 should stand to be the last survivor.
 
-Implementation Notes:
-------------------
+Dev Notes:
+---------
 the default implementation is for the actual situation josephus was in
 this is a mathematical way of doing it, you could simulate it, but it would take too long
 */
