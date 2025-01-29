@@ -17,7 +17,7 @@ A collection of solutions to various historic mathematical and computational pro
   , [Rust](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/Rust/The%20Eight%20Queens%20Problem.rs)
 - The Hanoi Tower Problem
   - [Rust](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/Rust/The%20Hanoi%20Tower.rs)
-  , [C++]()
+  , [C++](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/C%2B%2B/The%20Hanoi%20Tower.cpp)
 - The Knapsack Problem
 - The Pancake Sorting Problem
 - The Lights Out Puzzle
