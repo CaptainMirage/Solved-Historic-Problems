@@ -52,11 +52,12 @@ Each problem solution includes:
 - Problem description
 - Historical context
 - Dev note (old Implementation)
+- Solution
 - Test cases (sometimes)
 
 ## Languages Used
-- [Rust](https://doc.rust-lang.org/book/)
-- [C++](https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170)
+- [Rust 1.85+](https://doc.rust-lang.org/book/)
+- [C++ 17+](https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170)
 - [C](https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170) (yet to be done)
 
 ## Contributing
