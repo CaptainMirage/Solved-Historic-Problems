@@ -13,13 +13,10 @@ became a significant challenge in combinatorial mathematics. It gained prominenc
 a classic example of backtracking algorithms and constraint satisfaction problems, 
 attracting mathematicians and computer scientists for over a century.
 
-Implementation Notes:
-------------------
-The problem is typically solved using backtracking, a recursive algorithmic technique 
-that explores all potential solutions by incrementally building candidates and 
-abandoning those that cannot possibly be completed to a valid solution. In the case 
-of the Eight Queens Problem, this means progressively placing queens and immediately 
-rejecting arrangements that violate the non-attacking constraint.
+Dev Notes:
+---------
+i just translated the cpp version
+to test the code, for now its with the test profile (cargo run --test)
 */
 #[allow(unused_imports)]
 use std::collections::HashSet;
@@ -90,7 +87,7 @@ impl EightQueens {
     /// Pretty print solutions
     pub fn print_solutions(&self) {
         for (idx, solution) in self.solutions.iter().enumerate() {
-            println!("Solution {}:", idx + 1);
+            println!("Solution #{}:", idx + 1);
             self.print_board(solution);
             println!();
         }
