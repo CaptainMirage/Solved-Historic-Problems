@@ -12,91 +12,47 @@ In 1736, Leonhard Euler solved this problem, which is considered the birth of gr
 theory and topology. Euler proved that such a path was impossible, demonstrating that 
 the configuration of bridges made a single traversal of all bridges unachievable. 
 This breakthrough laid the foundation for modern network theory and mathematical graph analysis.
+
+Dev Notes:
+---------
+work in progress
 */
 
-#include <iostream>
-#include <vector>
 #include <unordered_map>
-#include <cassert>
+#include <vector>
+#include <utility>
 
-class KonigsbergBridges {
+class Graph {
 private:
-    // Representation of graph using adjacency list
-    std::unordered_map<int, std::vector<int>> graph;
-    int totalBridges;
+    // Equivalent to Rust's HashMap<char, Vec<char>>
+    std::unordered_map<char, std::vector<char>> adjacency_list;
 
 public:
-    // Constructor to initialize the graph
-    KonigsbergBridges() {
-        // Original Königsberg bridge configuration
-        // 4 land masses (nodes): 0, 1, 2, 3
-        // Bridges connecting these masses
-        graph[0] = {1, 1, 2, 3};  // Node 0 has connections
-        graph[1] = {0, 0, 2, 3};  // Node 1 has connections
-        graph[2] = {0, 1, 3, 3};  // Node 2 has connections
-        graph[3] = {0, 1, 2, 2};  // Node 3 has connections
-        totalBridges = 7;
-    }
+    // Default constructor
+    Graph() = default;
 
-    // Check if Eulerian path exists
-    bool hasEulerianPath() {
-        return checkEulerianCondition();
-    }
-
-    // Count odd-degree vertices
-    int countOddDegreeVertices() {
-        int oddVertices = 0;
-        for (const auto& node : graph) {
-            if (node.second.size() % 2 != 0) {
-                oddVertices++;
-            }
+    // Constructor from vector of edges (equivalent to Rust's new function)
+    Graph(const std::vector<std::pair<char, char>>& edges) {
+        for (const auto& [u, v] : edges) {
+            // Add edge in both directions for undirected graph
+            adjacency_list[u].push_back(v);
+            adjacency_list[v].push_back(u);
         }
-        return oddVertices;
     }
 
-    // Check Eulerian path conditions
-    bool checkEulerianCondition() {
-        int oddVertices = countOddDegreeVertices();
-        
-        // Eulerian path exists if 0 or 2 vertices have odd degree
-        return (oddVertices == 0 || oddVertices == 2);
+    // Alternative constructor using iterator range
+    template<typename Iterator>
+    Graph(Iterator begin, Iterator end) {
+        for (auto it = begin; it != end; ++it) {
+            const char u = it->first;
+            const char v = it->second;
+            adjacency_list[u].push_back(v);
+            adjacency_list[v].push_back(u);
+        }
     }
 
-    // Get total number of bridges
-    int getBridgeCount() const {
-        return totalBridges;
+    // Getter for adjacency list (useful for testing and verification)
+    const std::unordered_map<char, std::vector<char>>& get_adjacency_list() const {
+        return adjacency_list;
     }
 };
-
-namespace {
-    // Unit tests
-    void runTests() {
-        KonigsbergBridges bridges;
-
-        // Test: Total number of bridges
-        assert(bridges.getBridgeCount() == 7);
-
-        // Test: Eulerian path condition
-        assert(bridges.hasEulerianPath() == false);
-
-        // Test: Count of odd-degree vertices
-        assert(bridges.countOddDegreeVertices() == 4);
-
-        std::cout << "All Königsberg Bridges tests passed!" << std::endl;
-    }
-}
-
-int main() {
-    KonigsbergBridges bridges;
-
-    std::cout << "Total Bridges: " << bridges.getBridgeCount() << std::endl;
-    std::cout << "Eulerian Path Possible: " << 
-        (bridges.hasEulerianPath() ? "Yes" : "No") << std::endl;
-    std::cout << "Odd-Degree Vertices: " << 
-        bridges.countOddDegreeVertices() << std::endl;
-
-    // Run tests
-    runTests();
-
-    return 0;
-}
