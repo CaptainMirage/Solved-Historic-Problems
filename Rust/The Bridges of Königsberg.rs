@@ -24,8 +24,8 @@ Euler's theorem states that:
 - An Eulerian circuit exists if all vertices have an even degree.
 - An Eulerian path exists if exactly 0 or 2 vertices have an odd degree.
 
-Implementation Notes:
---------------------
+Dev Notes:
+---------
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 it's not done stfu
 i will have to add some more stuff to it
