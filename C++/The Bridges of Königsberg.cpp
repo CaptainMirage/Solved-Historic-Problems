@@ -103,7 +103,7 @@ void run_tests() {
 }
 
 int main() {
-    std::cout << "Analyzing the Bridges of Königsberg problem..\n";
+    std::cout << "Analyzing the Bridges of Konigsberg problem..\n";
     run_tests();
     return 0;
 }
