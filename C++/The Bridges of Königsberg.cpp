@@ -1,16 +1,16 @@
-/* 
+/*
 Problem Description:
 -----------------
-The Bridges of Königsberg problem asks whether it is possible to walk through the city 
-of Königsberg crossing each of its seven bridges exactly once and returning to the 
-starting point. The city had seven bridges connecting two islands and the mainland, 
+The Bridges of Königsberg problem asks whether it is possible to walk through the city
+of Königsberg crossing each of its seven bridges exactly once and returning to the
+starting point. The city had seven bridges connecting two islands and the mainland,
 forming a complex network that challenged mathematicians of the time.
 
 Historical Context:
 ----------------
-In 1736, Leonhard Euler solved this problem, which is considered the birth of graph 
-theory and topology. Euler proved that such a path was impossible, demonstrating that 
-the configuration of bridges made a single traversal of all bridges unachievable. 
+In 1736, Leonhard Euler solved this problem, which is considered the birth of graph
+theory and topology. Euler proved that such a path was impossible, demonstrating that
+the configuration of bridges made a single traversal of all bridges unachievable.
 This breakthrough laid the foundation for modern network theory and mathematical graph analysis.
 
 Dev Notes:
@@ -79,7 +79,7 @@ public:
 
 void run_tests() {
     std::vector<std::pair<std::string, std::vector<std::pair<char, char>>>> test_cases = {
-        {"Königsberg Bridges", {
+        {"Konigsberg Bridges", {
             {'A', 'B'}, {'A', 'B'}, {'A', 'C'},
             {'A', 'D'}, {'C', 'B'}, {'C', 'D'},
             {'B', 'D'}
@@ -89,7 +89,7 @@ void run_tests() {
             }},
         {"Eulerian Circuit (All even-degree vertices)", {
             {'A', 'B'}, {'B', 'C'}, {'C', 'A'}
-            }}
+            }},
         {"No Eulerian Path or Circuit (3 odd-degree vertices)", {
             {'A', 'B'}, {'A', 'C'}, {'A', 'D'}
             }}
@@ -98,7 +98,7 @@ void run_tests() {
     for (const auto& [name, bridges] : test_cases) {
         std::cout << "Test Case: " << name << "\n";
         Graph graph(bridges);
-        std::cout << "Result: " << graph.analyze_elerian() << "\n";
+        std::cout << "Result: " << '\n' << graph.analyze_elerian() << "\n";
     }
 }
 
