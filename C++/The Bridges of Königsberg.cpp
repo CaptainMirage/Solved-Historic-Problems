@@ -18,9 +18,11 @@ Dev Notes:
 work in progress
 */
 
+#include <iostream>
 #include <unordered_map>
 #include <vector>
-#include <utility>
+#include <string>
+
 
 class Graph {
 private:
@@ -55,4 +57,53 @@ public:
     const std::unordered_map<char, std::vector<char>>& get_adjacency_list() const {
         return adjacency_list;
     }
+
+    std::string analyze_elerian() const {
+        int odd_degree_const = 0;
+        for (const auto& [node, neighbors] : adjacency_list) {
+            int degree = neighbors.size();
+            std::cout << "Vertex" << node << "has degree" << degree;
+
+            if (degree % 2 != 0) {
+                odd_degree_const++;
+            }
+        }
+
+        if (odd_degree_const == 0) {
+            return "This graph has an Eulerian circuit (all vertices have an even degree).";
+        } else if (odd_degree_const == 2) {
+            return "This graph has an Eulerian path (exactly two vertices have an odd degree).";
+        } else { return "No Eulerian path or circuit exists."; }
+    }
 };
+
+void run_tests() {
+    std::vector<std::pair<std::string, std::vector<std::pair<char, char>>>> test_cases = {
+        {"Königsberg Bridges", {
+            {'A', 'B'}, {'A', 'B'}, {'A', 'C'},
+            {'A', 'D'}, {'C', 'B'}, {'C', 'D'},
+            {'B', 'D'}
+            }},
+        {"Eulerian Path (2 odd-degree vertices)", {
+            {'A', 'B'}, {'A', 'C'}, {'B', 'C'}
+            }},
+        {"Eulerian Circuit (All even-degree vertices)", {
+            {'A', 'B'}, {'B', 'C'}, {'C', 'A'}
+            }}
+        {"No Eulerian Path or Circuit (3 odd-degree vertices)", {
+            {'A', 'B'}, {'A', 'C'}, {'A', 'D'}
+            }}
+    };
+
+    for (const auto& [name, bridges] : test_cases) {
+        std::cout << "Test Case: " << name << "\n";
+        Graph graph(bridges);
+        std::cout << "Result: " << graph.analyze_elerian() << "\n";
+    }
+}
+
+int main() {
+    std::cout << "Analyzing the Bridges of Königsberg problem..\n";
+    run_tests();
+    return 0;
+}
