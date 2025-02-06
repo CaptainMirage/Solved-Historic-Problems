@@ -15,6 +15,7 @@ This breakthrough laid the foundation for modern network theory and mathematical
 
 Dev Notes:
 ---------
+im just translating the rust version, did you think i would use my brain?
 work in progress
 */
 
@@ -23,7 +24,7 @@ work in progress
 #include <vector>
 #include <string>
 
-
+ /// Represents a graph structure using adjacency list
 class Graph {
 private:
     // Equivalent to Rust's HashMap<char, Vec<char>>
@@ -33,21 +34,9 @@ public:
     // Default constructor
     Graph() = default;
 
-    // Constructor from vector of edges (equivalent to Rust's new function)
+    // Creates a new graph with given edges
     Graph(const std::vector<std::pair<char, char>>& edges) {
         for (const auto& [u, v] : edges) {
-            // Add edge in both directions for undirected graph
-            adjacency_list[u].push_back(v);
-            adjacency_list[v].push_back(u);
-        }
-    }
-
-    // Alternative constructor using iterator range
-    template<typename Iterator>
-    Graph(Iterator begin, Iterator end) {
-        for (auto it = begin; it != end; ++it) {
-            const char u = it->first;
-            const char v = it->second;
             adjacency_list[u].push_back(v);
             adjacency_list[v].push_back(u);
         }
@@ -58,6 +47,7 @@ public:
         return adjacency_list;
     }
 
+    // Determines the degree of each node and checks for Eulerian path or circuit
     std::string analyze_elerian() const {
         int odd_degree_const = 0;
         for (const auto& [node, neighbors] : adjacency_list) {
@@ -77,6 +67,7 @@ public:
     }
 };
 
+// Runs test cases to validate the graph logic
 void run_tests() {
     std::vector<std::pair<std::string, std::vector<std::pair<char, char>>>> test_cases = {
         {"Konigsberg Bridges", {
