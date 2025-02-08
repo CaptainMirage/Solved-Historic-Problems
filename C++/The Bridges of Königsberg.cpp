@@ -16,7 +16,6 @@ This breakthrough laid the foundation for modern network theory and mathematical
 Dev Notes:
 ---------
 im just translating the rust version, did you think i would use my brain?
-work in progress
 */
 
 #include <iostream>
