@@ -92,6 +92,7 @@ mod tests {
 
 fn main() {
     // Example usage
-    let sieve = Sieve::new(100000);
-    println!("Prime numbers up to 30: {:?}", sieve.get_primes());
+    let da_limit = 10000;
+    let sieve = Sieve::new(da_limit);
+    println!("Prime numbers up to {}: {:?}", da_limit, sieve.get_primes());
 }
