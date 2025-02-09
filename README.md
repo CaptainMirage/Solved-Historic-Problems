@@ -9,6 +9,8 @@ A collection of solutions to various historic mathematical and computational pro
   , [C++](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/C%2B%2B/The%20Josephus%20Problem.cpp)
 - The Chinese Remainder Theorem
 - Sieve of Eratosthenes
+  - [Rust](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/Rust/Sieve%20of%20Eratosthenes.rs)
+  , C++
 - The Collatz Conjecture
 
 ### Algorithms & Puzzle Problems
