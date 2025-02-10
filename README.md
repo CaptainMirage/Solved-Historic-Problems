@@ -10,7 +10,7 @@ A collection of solutions to various historic mathematical and computational pro
 - The Chinese Remainder Theorem
 - Sieve of Eratosthenes
   - [Rust](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/Rust/Sieve%20of%20Eratosthenes.rs)
-  , C++
+  , [C++](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/C%2B%2B/Sieve%20of%20Eratosthenes.cpp)
 - The Collatz Conjecture
 
 ### Algorithms & Puzzle Problems
