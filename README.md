@@ -44,7 +44,7 @@ A collection of solutions to various historic mathematical and computational pro
 - The Two Generals' Problem
 - The Dining Philosophers Problem
   - [C++](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/C%2B%2B/The%20Dining%20Philosophers%20Problem.cpp)
-  , No Rust?
+  , Rust
 - The Dining Cryptographers Problem
   - coming soon
 
@@ -64,7 +64,6 @@ Each problem solution includes:
 - [Rust 1.85+](https://doc.rust-lang.org/book/)
 - [C++ 17+](https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170)
 - [C](https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170) (yet to be done)
-- [Kotlin?]()
 
 ## Contributing
 Feel free to add new solutions or improve existing ones!
