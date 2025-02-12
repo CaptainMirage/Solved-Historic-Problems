@@ -20,15 +20,8 @@ Historical Context:
 - Classic example used to teach concurrent programming concepts
 
 Dev Note:
--------------------------------------------
-Traditional implementations often suffer from:
-1. Deadlock when all philosophers pick up left chopstick simultaneously
-2. Limited concurrency due to overly restrictive synchronization
-3. Starvation of some philosophers in naive implementations
-4. Complex code that's hard to verify for correctness
-
-This implementation uses a "resource hierarchy" solution where philosophers pick up
-chopsticks in a specific order to prevent deadlock.
+--------
+not much to say, alot of includes is funni
 */
 
 #include <iostream>
