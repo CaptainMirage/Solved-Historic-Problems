@@ -19,7 +19,7 @@ Historical Context:
 - Represents real-world resource allocation problems in operating systems
 - Classic example used to teach concurrent programming concepts
 
-Dev Note (Traditional Implementation Issues):
+Dev Note:
 -------------------------------------------
 Traditional implementations often suffer from:
 1. Deadlock when all philosophers pick up left chopstick simultaneously
