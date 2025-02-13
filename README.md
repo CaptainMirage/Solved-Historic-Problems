@@ -46,7 +46,6 @@ A collection of solutions to various historic mathematical and computational pro
   - [C++](https://github.com/CaptainMirage/Solved-Historic-Problems/blob/main/C%2B%2B/The%20Dining%20Philosophers%20Problem.cpp)
   , Rust
 - The Dining Cryptographers Problem
-  - coming soon
 
 ### Pattern Generation & Cellular Automata
 - The Gosper's Gun Problem
