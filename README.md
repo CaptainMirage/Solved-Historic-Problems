@@ -62,7 +62,7 @@ Each problem solution includes:
 ## Languages Used
 - [Rust 1.85+](https://doc.rust-lang.org/book/)
 - [C++ 17+](https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170)
-- [C](https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170) (yet to be done)
+- [C?](https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170) (yet to be done)
 
 ## Contributing
 Feel free to add new solutions or improve existing ones!
