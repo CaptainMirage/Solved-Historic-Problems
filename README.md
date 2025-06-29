@@ -65,4 +65,4 @@ Each problem solution includes:
 - [C](https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170) (N/A)
 
 ## Contributing
-Feel free to add new solutions or improve existing ones!
+Feel free to add new solutions or improve existing ones!
